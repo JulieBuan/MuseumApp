@@ -72,7 +72,7 @@ fun Homepage(modifier: Modifier = Modifier) {
         )
         Box(
             modifier = Modifier
-            .height(400.dp) // same height as image
+            .height(400.dp)
             .fillMaxWidth()){
 
             Image (

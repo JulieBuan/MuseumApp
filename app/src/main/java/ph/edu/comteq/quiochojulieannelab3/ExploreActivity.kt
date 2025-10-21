@@ -1,5 +1,6 @@
 package ph.edu.comteq.quiochojulieannelab3
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -29,6 +30,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.modifier.modifierLocalOf
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -177,9 +179,10 @@ fun Explore() {
                     }
                 }
 
-
+            val context = LocalContext.current
                 Button (
-                    onClick = { /* TODO: Open Gallery */ },
+                    onClick = { val intent = Intent(context, ArtistPageActivity::class.java)
+                        context.startActivity(intent)},
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(80.dp),

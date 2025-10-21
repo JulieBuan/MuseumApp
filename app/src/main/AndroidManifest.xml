@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuiochoJulieAnneLab3">
         <activity
+            android:name=".ExhibitPageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_exhibit_page"
+            android:theme="@style/Theme.QuiochoJulieAnneLab3" />
+        <activity
+            android:name=".ArtistPageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_artist_page"
+            android:theme="@style/Theme.QuiochoJulieAnneLab3" />
+        <activity
             android:name=".ExploreActivity"
             android:exported="false"
             android:label="@string/title_activity_explore"
