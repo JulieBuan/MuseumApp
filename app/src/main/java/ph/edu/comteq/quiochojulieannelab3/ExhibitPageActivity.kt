@@ -88,7 +88,7 @@ fun ArtistExhibitScreen(artwork: Artwork, modifier: Modifier = Modifier) {
                     .background(Color(0xFFEEDC82),)
 
             ){
-                Column (modifier = Modifier.padding(16.dp)
+                Column (modifier = Modifier.padding(15.dp)
                     .fillMaxWidth()
                     .background(Color(0xFFEEDC82),)
                 ){
